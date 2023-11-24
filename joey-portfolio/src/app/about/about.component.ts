@@ -11,5 +11,7 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+  tags = [
+    "VueJS", "AngularTS", "Java Spring Boot", "ASP.NET C#", "MongoDB", "SQL", "Basic Python", "Basic C++"
+  ];
 }
