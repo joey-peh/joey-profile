@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './employment-history.component.html',
-  styleUrl: './employment-history.component.css'
+  styleUrls: ['./employment-history.component.css', '../app.component.css']
 })
 export class EmploymentHistoryComponent {
 

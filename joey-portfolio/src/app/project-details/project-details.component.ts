@@ -7,7 +7,7 @@ import { MatDividerModule } from '@angular/material/divider';
   standalone: true,
   imports: [CommonModule, MatListModule, MatDividerModule],
   templateUrl: './project-details.component.html',
-  styleUrl: './project-details.component.css'
+  styleUrls: ['./project-details.component.css', '../app.component.css']
 })
 export class ProjectDetailsComponent {
 

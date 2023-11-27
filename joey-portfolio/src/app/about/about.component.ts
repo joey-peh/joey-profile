@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [CommonModule, MatChipsModule, MatCardModule],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrls: ['./about.component.css', '../app.component.css'],
 })
 export class AboutComponent {
   tags = [
