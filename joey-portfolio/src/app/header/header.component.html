@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar class="nav-bar">
     <ul>
         <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
             true}">About</a>
@@ -11,4 +11,22 @@
         <li><a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
             true}">Projects</a></li>
     </ul>
+</mat-toolbar>
+
+<mat-toolbar class="hamburger">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" style="list-style-type: none;">
+        <button mat-menu-item routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">About</button>
+        <button mat-menu-item routerLink="/employment-history" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">Employment
+            History</button>
+        <button mat-menu-item routerLink="/education" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">Education</button>
+        <button mat-menu-item routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">Projects</button>
+    </mat-menu>
+    <span>Resume Web Application</span>
 </mat-toolbar>

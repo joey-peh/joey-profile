@@ -1,22 +1,17 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLink, Router, RouterLinkActive, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, RouterLink, RouterLinkActive],
+  imports: [CommonModule, MatListModule, MatToolbarModule, RouterLink, RouterLinkActive, MatMenuModule, MatIconModule, MatButtonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  constructor(private route: ActivatedRoute, private router: Router) {
-    // router.events.subscribe(x => console.log(x));
-  }
-
-  ngOnInit() {
-  }
-  onRouterLinkActive(l: any) {
-    console.log("change detected!" + l);
-  }
 }
